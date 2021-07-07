@@ -31,6 +31,52 @@ plt.bar(xValues, dataList, label='Bar Plot')
 plt.legend()
 plt.show()
 
+# Here, we're writing a function that will display a line plot #
+
+
+# def lineplot(xCoords, line1, line2, xLabels, lineLabels, title):
+#     # Treat this like a fill in the blanks sheet!
+#     # Variables like size, width, and range are totally up to you
+#     # Some blanks require figuring out which parameters go where, so careful
+
+#     # Plotting #
+#     plt.ylim(0, 100)  # Defines range of y values
+#     plt.plot(xCoords, line1, label=line2[0], linewidth=8, color='red')
+#     plt.plot(xCoords, line2, label=line1[1], linewidth=8, color='green')
+
+#     # Display Labels and Legend #
+#     # Labels each x value
+#     plt.xticks(ticks=xCoords, labels=xLabels, fontsize=13)
+#     # Labels each y value
+#     plt.yticks(fontsize=13)
+#     # Displays title
+#     plt.title(title, fontsize=13)
+#     plt.grid(True, axis='y', linestyle=':',
+#              linewidth='3', color='blue')  # Adds a grid
+#     # Displays legend
+#     plt.legend(fontsize=13, bbox_to_anchor=[0, 13])
+#     # Saves graph to local computer using title
+#     plt.savefig(title)
+#     plt.show()
+
+# # Generating Data #
+# # This graph is a simulation of someone's personal finances
+
+
+# # The list(range()) functions will put every integer
+# xVals = list(range(0, 9))
+# # between the lowerbound and the upperbound into a list
+# # Generates random numbers for money spent
+# spending = np.random.randint(low=0, high=9, size=(9))
+# # Random numbers for money saved
+# saving = np.random.randint(low=0, high=9, size=(9))
+
+# # Labels x axis with months
+# xMonths = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# # Calling the function #
+# lineplot(xVals, spending, saving, xMonths, ['Spending', 'Saving'], 'Money')
+
 # Word Spliting
 
 phrase = "Do or do not, there is no try"
